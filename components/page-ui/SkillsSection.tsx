@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { FaJava, FaReact } from 'react-icons/fa';
-import { SiPostgresql, SiSpringboot, SiTailwindcss } from 'react-icons/si';
+import { SiDjango, SiPostgresql, SiPython, SiTypescript } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 
 import { EvervaultCard, Icon } from '@/components/ui/evervault-card';
@@ -12,7 +12,7 @@ export function SkillsSection() {
             <h1 id="skills" className="pt-20 md:pt-32 max-w-5xl font-bold text-2xl text-white md:text-7xl">
                 Skills
             </h1>
-            <div className={'grid grid-cols-1 gap-6  py-10 md:grid-cols-2 lg:grid-cols-2'}>
+            <div className={'grid grid-cols-1 gap-6  py-10 md:grid-cols-2 lg:grid-cols-3'}>
                 {skills.map((item, idx) => (
                     <Link
                         key={idx}
@@ -33,6 +33,16 @@ export function SkillsSection() {
 
 const skills = [
     {
+        title: 'TypeScript',
+        link: 'https://www.typescriptlang.org/',
+        icon: <SiTypescript />
+    },
+    {
+        title: 'Python',
+        link: 'https://www.python.org/',
+        icon: <SiPython />
+    },
+    {
         title: 'React.js',
         link: 'https://react.dev/',
         icon: <FaReact />
@@ -43,13 +53,13 @@ const skills = [
         icon: <TbBrandNextjs />
     },
     {
-        title: 'Tailwind',
-        link: 'https://tailwindcss.com',
-        icon: <SiTailwindcss />
+        title: 'Django REST Framework',
+        link: 'https://www.postgresql.org',
+        icon: <SiDjango />
     },
     {
         title: 'PostgreSQL',
         link: 'https://www.postgresql.org',
         icon: <SiPostgresql />
-    }
+    },
 ];

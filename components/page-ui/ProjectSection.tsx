@@ -19,57 +19,36 @@ export interface ProjectsProps {
     hrefExplication?: string;
 }
 
-const technologies: string[] = [
-    'Python',
-    'TensorFlow',
-    'Keras',
-    'PyTorch',
-    'Pandas',
-    'Imbalanced Learn',
-    'Hugging Face',
-    'Scikit-learn',
-    'React',
-    'NextJS',
-    'PostgreSQL',
-    'TypeScript',
-    'Djando REST Framework',
-    'Docker',
-    'Google Cloud Platform',
-    'Amazon Web Services',
-    'Rapids',
-    'Cuda',
-];
-
 const projects: ProjectsProps[] = [
     {
-        title: 'Fine-Tuning of LLaMA 2 with QLoRA Optimization',
-        link: 'https://github.com/LuisSante/Fine-Tuning-of-LLaMA-2-with-QLoRA-Optimization',
+        title: '',
+        link: '',
         icon: < FaProjectDiagram />,
-        description: "Conducted fine-tuning of the 'NousResearch/Llama-2-7b-chat-hf' model using the 'mlabonne/guanaco-llama2-1k' dataset to create the customized 'llama-2-7b-miniguanaco' model. Implemented QLoRA with parameters such as a 64-dimension LoRA attention layer and 4-bit precision to optimize the model’s performance while maintaining resource efficiency. Configured and trained the model with advanced hyperparameters including a cosine learning rate schedule, gradient checkpointing, and specific optimizer settings like paged_adamw_32bit. Fine-tuning was performed using Hugging Face Transformers and PyTorch, achieving optimized performance in language modeling tasks.",
-        tech: `Fine Tuning - ${technologies[0]} - ${technologies[6]} - ${technologies[3]} - LLaMA2 - QLoRA`,
+        description: '',
+        tech: '',
     },
     {
-        title: 'Image Classification',
-        link: 'https://github.com/LuisSante/Image-Classification',
+        title: '',
+        link: '',
         icon: < FaImage />,
-        description: "Developed a Convolutional Neural Network (CNN) model for image classification, achieving an accuracy of 85.72% on the test set. Preprocessed image data using techniques such as data augmentation and normalization to improve model generalization. Implemented the model using TensorFlow/Keras and optimized its performance through hyperparameter tuning.",
-        tech: `${technologies[0]} - ${technologies[1]} - Convolutional Neural Network - Data Augmentation`,
+        description: '',
+        tech: '',
     },
     {
-        title: 'AI for E-Commerce Profitability Insights',
-        link: 'https://github.com/LuisSante/LexCom',
-        linkPage: 'https://lexcom.tech/',
+        title: '',
+        link: '',
+        linkPage: '',
         icon: < FaChartLine />,
-        description: "Led the development of an AI-based product profitability prediction system for an e-commerce platform, plus extra services such as text generators using OpenAi API, the project covers from backend and frontend development to cloud deployment. Utilized data balancing techniques such as SMOTE during the training phase to enhance dataset accuracy and improve model performance",
-        tech: `${technologies[0]} - Random Forest - SMOTE - Scrapy`,
+        description: '',
+        tech: '',
         iconPage: <FaLink />
     },
     {
-        title: 'Stroke Prediction',
-        link: 'https://github.com/LuisSante/Predicting-healthcare',
+        title: '',
+        link: '',
         icon: < FaHeartbeat />,
-        description: "Developed a machine learning model to predict the likelihood of a stroke using medical data, achieving an accuracy of 91.12% in validation tests. Utilized feature engineering and model selection techniques to optimize model accuracy, including Random Forest and XGBoost. Implemented data balancing techniques such as SMOTE to address class imbalance in the target variable.",
-        tech: `${technologies[0]} - Random Forest - XGBOOST - Feature Engineering`,
+        description: '',
+        tech: '',
     },
 ];
 
